@@ -1,0 +1,88 @@
+/*=====Pagina Plantilla========  */
+
+
+
+
+.form-plantilla {
+    color: white;
+    background-color: crimson;
+    padding: 5px;
+    gap: 10px;
+}
+
+.contenedor-plantilla {
+    display: flex;
+    flex-direction: column;
+}
+
+//  PAGINA PLANTILLA MIND WIDTH 600PX
+
+@media (min-width: 600px) {
+    .contenedor-plantilla {
+
+        height: 100%;
+        max-width: 90%;
+        gap: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 310);
+        grid-template-areas:
+            "cont-novedades fig-novedades"
+            "cont-entrenamiento fig-entrenamiento"
+            "cont-refuerzo fig-refuerzo"
+
+    }
+
+    .contenedor-novedades {
+        grid-area: cont-novedades;
+    }
+
+    .contenedor-entrenamiento {
+        grid-area: cont-entrenamiento;
+    }
+
+    .contenedor-refuerzo {
+        grid-area: cont-refuerzo;
+        
+    }
+
+    .figure-novedades {
+        grid-area: fig-novedades;
+    }
+
+    .figure-entrenamiento {
+        grid-area: fig-entrenamiento;
+    }
+
+    .figure-refuerzo {
+        grid-area: fig-refuerzo;
+    }
+
+    .img-novedades {
+        height: 310px;
+        object-fit: cover;
+        
+        
+
+        
+
+    }
+
+    .vid-entrenamiento {
+        height: 310px;
+
+        object-fit: cover;
+    }
+
+    .img-refuerzo {
+
+        height: 310px;
+        
+        object-fit: cover;
+        
+    }
+  
+    
+
+
+}

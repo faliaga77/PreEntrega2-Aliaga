@@ -1,0 +1,585 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+.body {
+  padding: 10px;
+}
+
+main {
+  padding: 20px;
+}
+
+.contenedor-img1 {
+  width: auto;
+  height: auto;
+}
+
+img {
+  width: auto;
+  height: auto;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+video {
+  width: auto;
+  height: auto;
+}
+
+video {
+  object-fit: cover;
+  width: 100%;
+  height: 400PX;
+}
+
+.alineacion {
+  text-align: center;
+}
+
+.titulo-alineacion {
+  font-size: 1.5em;
+}
+
+h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/* FOOTER--MOVIL */
+footer {
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+.footer-redes,
+.footer-section,
+.footer-asociate {
+  padding: 1em;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-pie {
+  display: flex;
+  justify-content: center;
+}
+
+footer h4 {
+  font-size: 1.5rem;
+}
+
+/* -----------FOOTER MIND-WIDTH 600px----------- */
+@media (min-width: 600px) {
+  .cont-footer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  .footer-pie {
+    border-top: solid;
+    padding: 3px;
+  }
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  font-family: "robotoslab";
+  color: white;
+  font-size: 50px;
+  background: linear-gradient(white, black);
+  border-radius: 1cm;
+}
+
+p {
+  font-family: "releway";
+  text-align: justify;
+}
+
+.cont-header {
+  background-image: url(../img/header-fondo.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.latinoamerica {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.input-form {
+  display: none;
+}
+
+.header-nav {
+  text-align: center;
+  justify-content: center;
+  color: aliceblue;
+  font-size: 15px;
+  background: linear-gradient(white, red);
+  border-radius: 1cm;
+  padding: 5px;
+}
+
+/* MIN-WIDTH index-html 600*/
+/* ----HEADER-INDEX con Flexbox------- */
+@media (min-width: 600px) {
+  .input-form {
+    display: flex;
+  }
+  .cont-header {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    padding: 15px;
+  }
+  .subh3-form {
+    display: flex;
+    justify-content: end;
+    padding: 15px;
+  }
+  .header-list {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+  }
+  .h1 {
+    font-size: 60px;
+    justify-content: center;
+  }
+}
+.header-championship {
+  display: flex;
+}
+
+/*=====Pagina Noticias Header */
+.header-noticias {
+  height: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: linear-gradient(white, red);
+}
+
+.escudo-noticias {
+  width: 80px;
+  height: 80px;
+}
+
+.h2-noticias {
+  color: white;
+  font-size: 3em;
+}
+
+.header-plantilla {
+  height: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: linear-gradient(white, red);
+}
+
+.h2plantilla {
+  color: white;
+  font-size: 3em;
+}
+
+.escudo-plantilla {
+  width: 80px;
+  height: 80px;
+}
+
+.header-socios {
+  height: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: linear-gradient(white, red);
+}
+
+.h2socios {
+  color: white;
+  font-size: 3em;
+}
+
+.escudo-socios {
+  width: 80px;
+  height: 80px;
+}
+
+.contenedor-socios {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-championship {
+  background: linear-gradient(white, red);
+}
+
+.titulo-championship {
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+
+.logo-championship {
+  height: 100px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.header-championship {
+  display: flex;
+}
+
+.main-index {
+  text-align: justify;
+}
+
+/* ---index-html MAIN CON GRID----------- */
+.contenedor-grid {
+  display: grid;
+  grid-template-columns: 1fr 150px;
+  grid-template-rows: 3, 1fr;
+  grid-template-areas: " futfem aside" " willferrell aside" " championship aside";
+  gap: 20px;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+video {
+  width: auto;
+  height: auto;
+}
+
+video {
+  object-fit: cover;
+  width: 100%;
+  height: 400PX;
+}
+
+.futfem {
+  grid-area: futfem;
+}
+
+.willferrell {
+  grid-area: willferrell;
+}
+
+.championship {
+  grid-area: championship;
+}
+
+.propaganda {
+  grid-area: aside;
+}
+
+/* ---index-html MAIN CON GRID----------- */
+.contenedor-grid {
+  display: grid;
+  grid-template-columns: 1fr 150px;
+  grid-template-rows: 3, 1fr;
+  grid-template-areas: " futfem aside" " willferrell aside" " championship aside";
+  gap: 20px;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+video {
+  width: auto;
+  height: auto;
+}
+
+video {
+  object-fit: cover;
+  width: 100%;
+  height: 400PX;
+}
+
+.futfem {
+  grid-area: futfem;
+}
+
+.willferrell {
+  grid-area: willferrell;
+}
+
+.championship {
+  grid-area: championship;
+}
+
+.propaganda {
+  grid-area: aside;
+}
+
+/* ====PAGE CHAMPIONSHIP MOVIL====== */
+.header-championship {
+  background: linear-gradient(white, red);
+}
+
+.titulo-championship {
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+
+.logo-championship {
+  height: 100px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.header-championship {
+  display: flex;
+}
+
+.main-championship {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: justify;
+}
+
+.equipos-championship {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.camisetas {
+  border: 2px solid black;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+.camiseta1 {
+  width: auto;
+  height: auto;
+  object-fit: cover;
+}
+
+.camiseta2 {
+  width: auto;
+  height: auto;
+  object-fit: cover;
+}
+
+.camiseta3 {
+  width: auto;
+  height: auto;
+  object-fit: cover;
+}
+
+.sunderstoreh2 {
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: cadetblue;
+  color: white;
+  border-radius: 20px;
+}
+
+/* ====PAGE CHAMPIONSHIP MIND WIDTH 600PX==== */
+@media (min-width: 600px) {
+  .main-championship {
+    display: grid;
+    grid-template-columns: repeat(3, 1f);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "tabla tabla camiseta1" "equipos equipos camiseta2" "alineacion alineacion camiseta3";
+  }
+  .tabla {
+    grid-area: tabla;
+  }
+  .equipos {
+    grid-area: equipos;
+  }
+  .alineacion {
+    grid-area: alineacion;
+  }
+  .camiseta1 {
+    grid-area: camiseta1;
+  }
+  .camiseta2 {
+    grid-area: camiseta2;
+  }
+  .camiseta3 {
+    grid-area: camiseta3;
+  }
+  .img-store {
+    height: fit-content;
+  }
+  .camisetas__store {
+    text-align: center;
+    border-bottom: solid;
+  }
+  .img-champ {
+    height: 300px;
+  }
+}
+.contenedor-noticias {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 600px) {
+  .contenedor-noticias {
+    gap: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1f);
+    grid-template-rows: repeat(4, 1f);
+    grid-template-areas: "dueño-sunderland dueño-sunderland dueño-sunderland" "obras-estadio obras-estadio obras-estadio" "nuevo-refuerzo nuevo-refuerzo nuevo-refuerzo" "netflix city coca-cola";
+  }
+  .dueño-sunderland {
+    grid-area: dueño-sunderland;
+  }
+  .obras-estadio {
+    grid-area: obras-estadio;
+  }
+  .nuevo-refuerzo {
+    grid-area: nuevo-refuerzo;
+  }
+  .subart-netflix {
+    grid-area: netflix;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  .subart-copacity {
+    grid-area: city;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  .subart-cocacola {
+    grid-area: coca-cola;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  .img-subart {
+    width: 350px;
+    height: 250px;
+  }
+}
+/* =====Pagina Socios ======= */
+.form-socios {
+  color: white;
+  background-image: linear-gradient(230deg, red 0% 40%, black);
+  padding: 5px;
+  box-shadow: 5px 5px 5px black;
+  display: flex;
+  flex-direction: column;
+}
+
+.escudo-form-socios {
+  max-width: 200px;
+  max-height: 150px;
+  background-size: cover;
+  background-position: center;
+  padding-left: 50px;
+}
+
+@media (min-width: 600px) {
+  .contenedor-socios {
+    padding: 30px;
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+/*=====Pagina Plantilla========  */
+.form-plantilla {
+  color: white;
+  background-color: crimson;
+  padding: 5px;
+  gap: 10px;
+}
+
+.contenedor-plantilla {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 600px) {
+  .contenedor-plantilla {
+    height: 100%;
+    max-width: 90%;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 310);
+    grid-template-areas: "cont-novedades fig-novedades" "cont-entrenamiento fig-entrenamiento" "cont-refuerzo fig-refuerzo";
+  }
+  .contenedor-novedades {
+    grid-area: cont-novedades;
+  }
+  .contenedor-entrenamiento {
+    grid-area: cont-entrenamiento;
+  }
+  .contenedor-refuerzo {
+    grid-area: cont-refuerzo;
+  }
+  .figure-novedades {
+    grid-area: fig-novedades;
+  }
+  .figure-entrenamiento {
+    grid-area: fig-entrenamiento;
+  }
+  .figure-refuerzo {
+    grid-area: fig-refuerzo;
+  }
+  .img-novedades {
+    height: 310px;
+    object-fit: cover;
+  }
+  .vid-entrenamiento {
+    height: 310px;
+    object-fit: cover;
+  }
+  .img-refuerzo {
+    height: 310px;
+    object-fit: cover;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

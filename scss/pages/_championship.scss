@@ -1,0 +1,132 @@
+
+
+/* ====PAGE CHAMPIONSHIP MOVIL====== */
+
+
+
+
+.header-championship {
+    background: linear-gradient(white,red
+    );
+  
+   }
+ 
+.titulo-championship {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    }
+
+.logo-championship {
+    height: 100px;
+    width: 100%;
+    object-fit: cover;
+
+}
+.header-championship {
+    display: flex;
+}
+.main-championship {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: justify;
+
+    
+}
+
+.equipos-championship {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+.camisetas {
+    border: 2px solid black;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    
+}
+.camiseta1 {
+    width: auto;
+    height: auto;
+    object-fit: cover;
+}
+.camiseta2 {
+    width: auto;
+    height: auto;
+    object-fit: cover;
+}
+.camiseta3 {
+    width: auto;
+    height: auto;
+    object-fit: cover;
+}
+
+
+
+.sunderstoreh2 {
+    text-align: center;
+}
+.btn:hover {
+    background-color: cadetblue;
+    color: white;
+    border-radius: 20px;
+}
+
+/* ====PAGE CHAMPIONSHIP MIND WIDTH 600PX==== */
+
+@media (min-width: 600px){
+
+ .main-championship { 
+    display: grid;
+    grid-template-columns: repeat(3, 1f);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+    "tabla tabla camiseta1"
+    "equipos equipos camiseta2"
+    "alineacion alineacion camiseta3"
+}
+
+.tabla {
+    grid-area: tabla;
+}
+.equipos {
+    grid-area: equipos;
+}
+.alineacion {
+    grid-area: alineacion;
+}
+.camiseta1 { 
+    grid-area: camiseta1;
+}
+.camiseta2 {
+    grid-area: camiseta2;
+}
+.camiseta3 {
+    grid-area: camiseta3;
+}
+
+   
+.img-store {
+    height: fit-content;
+} 
+
+.camisetas__store {
+    text-align: center;
+    border-bottom: solid;
+}
+.img-champ {
+    height: 300px;
+
+    }
+}
+
