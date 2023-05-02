@@ -3,10 +3,11 @@ h1 {
     display: flex;
     justify-content: center;
     font-family: "robotoslab";
-    color:white;
+    color:rgb(248, 239, 239);
     font-size: 50px;
-    background: linear-gradient(white,black);
-    border-radius: 1cm;
+    text-shadow: 5px 3px rgb(170, 7, 7);
+    // background: linear-gradient(white,black);
+    
 }
 
 p {
@@ -16,6 +17,8 @@ p {
 
 .cont-header {
     background-image: url(../img/header-fondo.jpg);
+    background-blend-mode: screen;
+    background-color: hsl(0, 0, 20);
     background-size: cover;
     background-position: center;
 }
