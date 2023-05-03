@@ -103,10 +103,10 @@ footer h4 {
 h1 {
   display: flex;
   justify-content: center;
-  font-family: "robotoslab";
-  color: rgb(248, 239, 239);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: rgb(94, 4, 4);
   font-size: 50px;
-  text-shadow: 5px 3px rgb(170, 7, 7);
+  text-shadow: 5px 3px rgb(232, 222, 222);
 }
 
 p {
@@ -147,6 +147,7 @@ p {
 @media (min-width: 600px) {
   .input-form {
     display: flex;
+    justify-content: right;
   }
   .cont-header {
     display: flex;
@@ -156,8 +157,9 @@ p {
   }
   .subh3-form {
     display: flex;
-    justify-content: end;
+    justify-content: center;
     padding: 15px;
+    gap: 80px;
   }
   .header-list {
     display: flex;
@@ -165,7 +167,7 @@ p {
     gap: 25px;
   }
   .h1 {
-    font-size: 60px;
+    font-size: 80px;
     justify-content: center;
   }
 }
