@@ -4,11 +4,12 @@
 .form-socios {
     color: white;
     background-image: linear-gradient(230deg, red 0% 40%, black);
-    padding: 5px;
-
+    padding: 10px;
     box-shadow: 5px 5px 5px black;
     display: flex;
     flex-direction: column;
+    border-radius: 5px;
+    gap: 5px;
 }
 
 .escudo-form-socios {
