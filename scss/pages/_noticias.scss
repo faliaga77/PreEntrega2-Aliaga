@@ -1,77 +1,76 @@
-
 .contenedor-noticias {
     display: flex;
     flex-direction: column;
-    
-}
-
-@media (min-width: 600px ) {
-
-.contenedor-noticias {
-    gap: 5px;
-    display: grid;
-    grid-template-columns: repeat(3, 1f
-    );
-    grid-template-rows: repeat(4, 1f
-    );
-    grid-template-areas:
-    "dueño-sunderland dueño-sunderland dueño-sunderland"
-    "obras-estadio obras-estadio obras-estadio"
-    "nuevo-refuerzo nuevo-refuerzo nuevo-refuerzo"
-    "netflix city coca-cola"
-
 
 }
 
-.dueño-sunderland {
-    grid-area: dueño-sunderland;
+@media (min-width: 600px) {
+
+    .contenedor-noticias {
+        gap: 5px;
+        display: grid;
+        grid-template-columns: repeat(3, 1f);
+        grid-template-rows: repeat(4, 1f);
+        grid-template-areas:
+            "dueño-sunderland dueño-sunderland dueño-sunderland"
+            "obras-estadio obras-estadio obras-estadio"
+            "nuevo-refuerzo nuevo-refuerzo nuevo-refuerzo"
+            "netflix city coca-cola"
+
+
+    }
+
+    .dueño-sunderland {
+        grid-area: dueño-sunderland;
+
+
+
+    }
+
+    .obras-estadio {
+        grid-area: obras-estadio;
+    }
+
+    .nuevo-refuerzo {
+        grid-area: nuevo-refuerzo;
+
+    }
+
+
+
+    .subart-netflix {
+        grid-area: netflix;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .subart-copacity {
+        grid-area: city;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .subart-cocacola {
+        grid-area: coca-cola;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .img-subart {
+        width: 350px;
+        height: 250px;
+
+    }
+
+
+
 
 
 
 }
-.obras-estadio {
-    grid-area: obras-estadio;
-}
-
-.nuevo-refuerzo {
-    grid-area: nuevo-refuerzo;
-    
-}
-
-
-
-.subart-netflix { 
-    grid-area: netflix;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-}
-.subart-copacity {
-    grid-area: city;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-}
-
-.subart-cocacola {
-    grid-area: coca-cola;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-}
- .img-subart {
-    width: 350px;
-    height: 250px;
-
- }
-
-
-
-
-
-
-}
-

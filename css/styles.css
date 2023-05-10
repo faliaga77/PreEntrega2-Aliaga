@@ -61,6 +61,10 @@ h1 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
+p {
+  font-size: 1.3em;
+}
+
 /* FOOTER--MOVIL */
 footer {
   background-color: black;
@@ -106,7 +110,9 @@ h1 {
   font-family: Georgia, "Times New Roman", Times, serif;
   color: rgb(240, 231, 231);
   font-size: 50px;
-  text-shadow: 5px 3px rgb(10, 6, 6);
+  text-shadow: 5px 3px rgb(240, 11, 11);
+  background: linear-gradient(white, black);
+  border-radius: 50px;
 }
 
 p {
@@ -167,7 +173,7 @@ p {
     gap: 25px;
   }
   .h1 {
-    font-size: 80px;
+    font-size: 100px;
     justify-content: center;
   }
 }

@@ -50,53 +50,57 @@ video {
     grid-area: aside;
 }
 
-  /* ---index-html MAIN CON GRID----------- */
-  .contenedor-grid {
+/* ---index-html MAIN CON GRID----------- */
+.contenedor-grid {
     display: grid;
     grid-template-columns: 1fr 150px;
-    grid-template-rows:(3, 1fr);
-    grid-template-areas: 
-    " futfem aside"
-    " willferrell aside"
-    " championship aside"
+    grid-template-rows: (3, 1fr);
+    grid-template-areas:
+        " futfem aside"
+        " willferrell aside"
+        " championship aside"
     ;
     gap: 20px;
 
-    }
-    
-    img {
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-        padding: 15px;
-    
-    }
-    video {
-        width: auto;
-        height: auto;
-        padding: 15px;
-    }
-    
-    video {
-        object-fit: cover;
-        width: 100%;
-        height: 400PX;
-    
-    }
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+
+}
+
+video {
+    width: auto;
+    height: auto;
+    padding: 15px;
+}
+
+video {
+    object-fit: cover;
+    width: 100%;
+    height: 400PX;
+
+}
 
 
 
 
 
 .futfem {
-grid-area: futfem;
+    grid-area: futfem;
 }
+
 .willferrell {
-grid-area: willferrell;
+    grid-area: willferrell;
 }
+
 .championship {
-grid-area: championship;
+    grid-area: championship;
 }
+
 .propaganda {
-grid-area: aside;
+    grid-area: aside;
 }
